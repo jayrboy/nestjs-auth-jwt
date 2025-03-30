@@ -1,0 +1,12 @@
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "username": "Alice",
+    "password": "topsecret"
+}
+
+###
+
+GET http://localhost:3000/auth/me
+authorization: Bearer <token>
